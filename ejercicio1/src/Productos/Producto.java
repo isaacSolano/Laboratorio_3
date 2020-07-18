@@ -2,7 +2,6 @@ package Productos;
 
 public class Producto {
     public String nombre;
-    public String estado;
 
     public Producto(String nombre){
         setNombre(nombre);
@@ -14,13 +13,5 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
     }
 }
