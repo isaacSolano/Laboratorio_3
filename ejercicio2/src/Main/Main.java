@@ -9,39 +9,58 @@ public class Main {
     private static Gestor_Visitante gVisitante = new Gestor_Visitante();
 
     public static void main(String[] args) {
-        System.out.println("==================================");
-        System.out.println("Crear Especialistas");
-        System.out.println( crearEspecialistas() );
+        String mensaje = crearEspecialistas();
+        int opcion = menu();
 
-        System.out.println("==================================");
-        System.out.println("Mostrando cantidad de medicamentos por especialista");
-        System.out.println( imprimirInforme() );
+        while(opcion != 0){
+            switch (opcion){
+                case 1:
+                    mensaje = asignarMedicamentos();
+                    break;
 
-        System.out.println("==================================");
-        System.out.println("Crear Visitantes");
-        System.out.println( crearVisitantes() );
+                case 2:
+                    mensaje = imprimirInforme();
+                    break;
 
-        System.out.println("==================================");
-        System.out.println("Visitar especialistas y equipar medicamentos");
-        System.out.println( visitarConcretos() );
+                default:
+                    mensaje = "Opcion invalida, intente de nuevo";
+                    break;
+            }
 
-        System.out.println("==================================");
-        System.out.println("Mostrando cantidad de medicamentos por especialista");
-        System.out.println( imprimirInforme() );
+            System.out.println(mensaje);
+            opcion = menu();
+        }
     }
+
+    public static int menu(){
+        String menu = "==================================\n"+
+                        "[0]. Salir\n" +
+                        "[1]. Asignar medicamentos\n"+
+                        "[2]. Imprimir reporte medicamentos\n"+
+                        "==================================";
+
+        System.out.println(menu);
+
+        return in.nextInt();
+    }
+
     public static String crearEspecialistas(){
-        return gVisitante.crearEspecialistas();
+        return "==================================\n" +
+                "Crear Especialistas\n" +
+                gVisitante.crearEspecialistas();
     }
 
-    public static String crearVisitantes(){
-        return gVisitante.crearVisitantes();
-    }
+    public static String asignarMedicamentos(){
+        gVisitante.crearVisitantes();
 
-    public static String visitarConcretos(){
-        return gVisitante.visitarConcretos();
+        return "==================================\n" +
+                "Asignando Mediamentos\n" +
+                gVisitante.visitarConcretos();
     }
 
     public static String imprimirInforme(){
-        return gVisitante.imprimirInforme();
+        return "==================================\n" +
+                "Crear Especialistas\n" +
+                gVisitante.imprimirInforme();
     }
 }

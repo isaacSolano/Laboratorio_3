@@ -40,34 +40,26 @@ public class Gestor_Visitante {
         return respuesta;
     }
 
-    public String crearVisitantes(){
-        String respuesta = "----------------------------------\n";
-
+    public void crearVisitantes(){
         objVisitantes.put("DentalCare", new Equipar_Dental_Care() );
-        respuesta += "Visitante dental care creado\n";
-
         objVisitantes.put("Paliperidona", new Equipar_Paliperidona() );
-        respuesta += "Visitante paliperidona creado\n";
-
         objVisitantes.put("Pomada", new Equipar_Pomada() );
-        respuesta += "Visitante pomada creado\n";
-
         objVisitantes.put("Paracetamol", new Equipar_Paracetamol() );
-        respuesta += "Visitante paracetamol creado\n";
-
-        respuesta += "==================================\n";
-        return respuesta;
     }
 
     public String visitarConcretos(){
         String respuesta = "----------------------------------\n";
 
-        for(int i=0; i<helper.getRandom(3); i++){
-            objVisitantes.forEach( (key, val) -> {
-                val.visit(arrEspeciaistas);
-            });
+        if(arrEspeciaistas.size() == 0){
+            respuesta += "** No hay especialistas creados **\n";
+        }else {
+            for (int i = 0; i < helper.getRandom(3); i++) {
+                objVisitantes.forEach((key, val) -> {
+                    val.visit(arrEspeciaistas);
+                });
 
-            respuesta += "Visitando medicos y brindando medicamentos...\n";
+                respuesta += "Visitando medicos y brindando medicamentos...\n";
+            }
         }
         respuesta += "==================================\n";
         return respuesta;
