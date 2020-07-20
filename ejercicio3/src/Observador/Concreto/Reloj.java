@@ -4,8 +4,6 @@ import Observador.Interfaces.iObservador;
 import Observador.Interfaces.iReloj;
 
 import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Reloj implements iReloj {
     private int numero;
@@ -28,17 +26,20 @@ public class Reloj implements iReloj {
 
     @Override
     public void notificar() {
-        if(getFecha().getMinutes() % numero == 0){
+        if (getFecha().getSeconds() % 7 == 0) {
+            obs.notificar(getFecha());
+        }
+
+        if(String.valueOf(getFecha().getMinutes() ).contains( String.valueOf( getNumero() ) ) ){
             obs.notificar( getFecha() );
         }
 
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                obs.notificar(getFecha());
-            }
-        }, getSegundosSecuencia() * 1000);
+        try{
+            Thread.sleep((getSegundosSecuencia()-1) * 1000);
+            obs.notificar( getFecha() );
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public int getNumero() {

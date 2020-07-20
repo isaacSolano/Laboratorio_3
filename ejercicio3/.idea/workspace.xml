@@ -20,18 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a549b2-8db1-4ef6-bff7-95ddf7286806" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ejercicio3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gestor/Gestor_Observador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helper/Alert_Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observador/Concreto/Observador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observador/Concreto/Reloj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observador/Interfaces/iObservador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observador/Interfaces/iReloj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ejercicio3/Helper/Alert_Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ejercicio3/Helper/Alert_Helper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ejercicio3/Observador/Concreto/Reloj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ejercicio3/Observador/Concreto/Reloj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ejercicio3/Observador/Concreto/Reloj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helper/Alert_Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/Alert_Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observador/Concreto/Reloj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observador/Concreto/Reloj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,22 +109,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="604" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1595194569464" />
-    <state width="1555" height="338" key="GridCell.Tab.0.bottom" timestamp="1595198297512">
+    <state width="1555" height="338" key="GridCell.Tab.0.bottom" timestamp="1595207877608">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1555" height="338" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1595198297512" />
-    <state width="1555" height="338" key="GridCell.Tab.0.center" timestamp="1595198297511">
+    <state width="1555" height="338" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1595207877608" />
+    <state width="1555" height="338" key="GridCell.Tab.0.center" timestamp="1595207877608">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1555" height="338" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1595198297511" />
-    <state width="1555" height="338" key="GridCell.Tab.0.left" timestamp="1595198297511">
+    <state width="1555" height="338" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1595207877608" />
+    <state width="1555" height="338" key="GridCell.Tab.0.left" timestamp="1595207877607">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1555" height="338" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1595198297511" />
-    <state width="1555" height="338" key="GridCell.Tab.0.right" timestamp="1595198297512">
+    <state width="1555" height="338" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1595207877607" />
+    <state width="1555" height="338" key="GridCell.Tab.0.right" timestamp="1595207877608">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1555" height="338" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1595198297512" />
+    <state width="1555" height="338" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1595207877608" />
     <state width="1555" height="275" key="GridCell.Tab.1.bottom" timestamp="1595193238119">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
